@@ -13,4 +13,9 @@ fn main() {
 
     println!("Is this value null? {}", is_it_null(ten));
     println!("Is this value null? {}", is_it_null(null));
+
+    let config_max = Some(3u8);
+    if let Some(max) = config_max {
+        println!("The maximum is configured to be {}", max);
+    }
 }
